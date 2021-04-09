@@ -1,0 +1,107 @@
+
+Initialised input:
+
+Routing table of router A:
+B -- 1
+C -- 5
+D -- inf
+Routing table of router B:
+A -- 1
+C -- 1
+D -- inf
+Routing table of router C:
+A -- 5
+B -- 1
+D -- 3
+Routing table of router D:
+A -- inf
+B -- inf
+C -- 3
+==================================================
+                  Iteration 1
+==================================================
+
+Routing table of router A with next hop:
+	B -- 1 -- B
+  *	C -- 2 -- B
+  *	D -- 8 -- C
+Routing table of router B with next hop:
+	A -- 1 -- A
+	C -- 1 -- C
+  *	D -- 4 -- C
+Routing table of router C with next hop:
+  *	A -- 2 -- B
+	B -- 1 -- B
+	D -- 3 -- D
+Routing table of router D with next hop:
+  *	A -- 8 -- C
+  *	B -- 4 -- C
+	C -- 3 -- C
+
+
+==================================================
+                  Iteration 2
+==================================================
+
+Routing table of router A with next hop:
+	B -- 1 -- B
+	C -- 2 -- B
+  *	D -- 5 -- B
+Routing table of router B with next hop:
+	A -- 1 -- A
+	C -- 1 -- C
+	D -- 4 -- C
+Routing table of router C with next hop:
+	A -- 2 -- B
+	B -- 1 -- B
+	D -- 3 -- D
+Routing table of router D with next hop:
+  *	A -- 5 -- C
+	B -- 4 -- C
+	C -- 3 -- C
+
+
+==================================================
+                  Iteration 3
+==================================================
+
+Routing table of router A with next hop:
+	B -- 1 -- B
+	C -- 2 -- B
+	D -- 5 -- B
+Routing table of router B with next hop:
+	A -- 1 -- A
+	C -- 1 -- C
+	D -- 4 -- C
+Routing table of router C with next hop:
+	A -- 2 -- B
+	B -- 1 -- B
+	D -- 3 -- D
+Routing table of router D with next hop:
+	A -- 5 -- C
+	B -- 4 -- C
+	C -- 3 -- C
+
+
+==================================================
+                  Iteration 4
+==================================================
+
+Routing table of router A with next hop:
+	B -- 1 -- B
+	C -- 2 -- B
+	D -- 5 -- B
+Routing table of router B with next hop:
+	A -- 1 -- A
+	C -- 1 -- C
+	D -- 4 -- C
+Routing table of router C with next hop:
+	A -- 2 -- B
+	B -- 1 -- B
+	D -- 3 -- D
+Routing table of router D with next hop:
+	A -- 5 -- C
+	B -- 4 -- C
+	C -- 3 -- C
+
+
